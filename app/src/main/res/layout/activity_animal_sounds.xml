@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.amos.zoo.animalSounds">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monkeyButton"
+        android:background="@mipmap/monkey"
+        android:layout_alignBottom="@+id/lionButton"
+        android:layout_toRightOf="@+id/lionButton"
+        android:layout_toEndOf="@+id/lionButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lionButton"
+        android:background="@mipmap/lion"
+        android:layout_below="@+id/elephantButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sealButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="149dp"
+        android:layout_marginEnd="149dp"
+        android:background="@mipmap/seal" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duckButton"
+        android:background="@mipmap/duck"
+        android:layout_alignBottom="@+id/monkeyButton"
+        android:layout_alignLeft="@+id/zebraButton"
+        android:layout_alignStart="@+id/zebraButton" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/elephantButton"
+        android:background="@mipmap/elephant"
+        android:layout_alignBottom="@+id/sealButton"
+        android:layout_toLeftOf="@+id/sealButton"
+        android:layout_toStartOf="@+id/sealButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zebraButton"
+        android:background="@mipmap/zebra"
+        android:layout_alignTop="@+id/sealButton"
+        android:layout_toLeftOf="@+id/elephantButton"
+        android:layout_toStartOf="@+id/elephantButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Press on an animal to hear it"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/elephantButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp" />
+</RelativeLayout>
